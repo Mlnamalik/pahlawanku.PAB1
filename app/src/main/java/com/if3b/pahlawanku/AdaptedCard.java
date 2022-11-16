@@ -32,6 +32,10 @@ public class AdaptedCard extends RecyclerView.Adapter<AdaptedCard.ClassViewHolde
         holder.tvNama.setText(pahlawan.getNama());
         holder.tvTentang.setText(pahlawan.getTentang());
         Glide
+                .with(holder.itemView.getContext())
+                .load(pahlawan.getFoto())
+                .centerCrop()
+                .into(holder.ivFoto);
 
     }
 
