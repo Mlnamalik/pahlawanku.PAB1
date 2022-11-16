@@ -29,4 +29,4 @@ public class ModelPahlawan {
         this.foto = foto;
     }
 }
-}
+
